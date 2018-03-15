@@ -11,7 +11,7 @@ background : assets/image/binary-strings-black.jpg
 background-opacity : 15
 transition : none
 published : true
-confidential : xa0277
+##confidential : xa0277
 pro-title : "Selenium Hacks"
 pro-subtitle : "As Presented at StarEast 2018"
 # pro-contact "Optional text directly below password input."

@@ -6,7 +6,7 @@ services:
 before_install:
   - docker login -u "$DOCKER_USERNAME" -p "$DOCKER_PASSWORD"
   - docker build Dockerfile
-  - now -e NODE_ENV=production --token $NOW_TOKEN
+  - now --public -e NODE_ENV=production --token $NOW_TOKEN
 
 
 env:

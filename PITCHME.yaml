@@ -2,18 +2,19 @@ slide-number : true
 highlight : Darkula
 logo : assets/logo.png
 footnote : "© 2018 Lazy Coder IO"
-theme : moon
+theme : league
 theme-override : assets/css/PITCHME.css
 # theme-override : assets/css/PITCHME.codemax.css
 highlight : ir-black
-logo : assets/lazycoder_octopus.png
-background : assets/image/binary-strings-black.jpg
+logo : assets/image/lazycoder_octopus.png
+background : assets/image/binary-strings-white.jpg
+autoslide : 10000
 background-opacity : 15
 transition : none
 published : true
 ##confidential : xa0277
-pro-title : "Selenium Hacks"
-pro-subtitle : "As Presented at StarEast 2018"
+# pro-title : "Selenium Hacks"
+# pro-subtitle : "As Presented at StarEast 2018"
 # pro-contact "Optional text directly below password input."
-pro-logo : assets/lazycoder_octopus.png
+# pro-logo : assets/lazycoder_octopus.png
 #pro-background : assets/your-splash.jpg

@@ -55,3 +55,4 @@ fabric.properties
 .idea/inspectionProfiles/
 .idea/markdown-navigator/
 .idea/modules.xml
+node_modules/*

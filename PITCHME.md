@@ -1,4 +1,4 @@
-<!-- .slide: data-autoslide="10000" -->
+<!-- .slide: data-autoslide="0" -->
 
 # Selenium Hacks
 

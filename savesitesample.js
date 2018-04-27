@@ -3,9 +3,9 @@ phantomHtml = require('website-scraper-phantom');
 
 scrape({
     urls: [
-        'http://localhost:9000/gitpitch/desktop#/'
+        'https://gitpitch.com/andrewmkrug/SeHacks#/'
     ],
-    directory: '/Users/andrewkrug/Projects/lazycoder/sites/SeHacks/public',
+    directory: '/Users/andrewkrug/Projects/lazycoder/sites/SeHacks/public2',
     httpResponseHandler: phantomHtml,
     filenameGenerator: 'bySiteStructure',
     subdirectories: [

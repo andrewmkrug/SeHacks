@@ -8,8 +8,8 @@ theme-override : assets/css/PITCHME.css
 highlight : ir-black
 logo : assets/image/lazycoder_octopus.png
 background : assets/image/binary-strings-white.jpg
-autoslide : 10000
-background-opacity : 15
+autoslide : 5000
+background-opacity : 10
 transition : none
 published : true
 ##confidential : xa0277

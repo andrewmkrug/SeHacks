@@ -5,7 +5,7 @@
 ## Andrew Krug Medina
 
 +++
-<!-- .slide: data-autoslide="3000" -->
+<!-- .slide: data-autoslide="2000" -->
 
 # Who I am
 
@@ -14,14 +14,11 @@
 * Cool things with Automation |
     * Dumb things with Automation |
 * Continuously Learns Geeky Stuff |
-* Run Getting Started with Selenium @ Selenium Conf |
+* Run Diving into Selenium @ Selenium Conf |
+* Committee member Selenium Conf |
 * Consult @ Gingham Consulting |
 * Blog @ LazyCoder.io |
 
-
----
-
-# Bonuses are sprinkled throughout
 
 ---
 
@@ -32,13 +29,6 @@
 
 # Since Dave is Awesome
 ## 10% off of his book
-
-+++
-
-# Code: SUPERSECRET
-[SeleniumGuidebook.com](https://seleniumguidebook.com/)
-
-### Thru May x
 
 ---
 
@@ -53,22 +43,26 @@
 # For Automation Engineers
 
 * It is a tool |
-* It is not your only tool |
+* Not your only tool |
 
 ---
 
 # How do you fill out your toolbox?
 
----?code=/assets/code/expected_outcome.py&title=Expected Outcome
++++?code=/assets/code/expected_outcome.py&title=Expected Outcome
 
 +++?code=/assets/code/person.py&title=How Will I Tell
 
-+++
++++?video=/assets/video/dont_be_scared.mp4
 # Don't be scared
+
 +++
 
 ---?image=/assets/image/binary-strings-white.jpg&opacity=15&color=#FFD700
-@css[yellow](@size[3em](@fa[exclamation-triangle yellow]))
+
+@css[spin](@css[yellow](@size[3em](@fa[exclamation-triangle yellow])))
+#TODO spin
+
 # Warning
 
 +++
@@ -124,51 +118,76 @@
 +++
 
 # Appium
-
+- Selenium for Mobile Devices |
 +++
 
 # Mad Lab
-
+- Device management (selection, cleanup, app install and uninstall) |
+- Parallel test execution (at Cucumber scenario level) |
+- Managing periodic ADB server disconnects |
+- Video recording of each scenario and embedding in the custom reports |
+- https://github.com/GoogleChromeLabs/MiniMobileDeviceLab |
 +++
 # FB Simulator Control
-
+- Run multiple iOS Simulators per Mac |
+- Bypass that 1 simulator constraint |
+- https://github.com/facebook/FBSimulatorControl |
 +++
 
 # SWD Recorder
+- Record Page Objects for your test suite |
+- https://github.com/dzharii/swd-recorder |
++++
 
+# Selenium Grid Extras
+- Web Interface for Grid Hub and Nodes |
+- Endpoints for actions: |
+    - Restart Node |
+    - Terminate browser sessions |
+- https://github.com/groupon/Selenium-Grid-Extras |
 +++
 
 # Docker-Selenium
 
+- Containers for Grid Nodes |
 +++
 
 # Selenium Grid Scalar
+- Uses Amazon Elastic Containers for Auto-Scaling Grid |
+- Docker-Selenium Plus |
 
-+++
-
-# Selenium Grid Extras
 
 +++
 
 # Selenoid
-
+- Low overhead wrapper over dockerized selenium hub and nodes|
+- https://github.com/aerokube/selenoid |
 +++
 
 # Zalenium
 
-+++
+- Docker-Selenium with fallback to Grid Providers |
+- If Platform/OS/Browser not found in containers |
+    - Check local grid |
+    - Spin up Session on: |
+        - Sauce Labs |
+        - Browserstack |
+- https://github.com/zalando/zalenium |
+---
 
 ## ...See what I did there?
-
++++
+# Deal with it
 ---
 
 # Topics
 
-
 - Listing them all here is time consuming |
 
 
+---
 
+# Bonuses are sprinkled throughout
 
 ---
 
@@ -178,7 +197,7 @@
 
 # ! This
 
-+++?image=/assets/image/horseless_headsman.jpg
++++?image=https://media.giphy.com/media/xX0jkVS8ZuTdu/giphy.gif
 
 # Or this
 
@@ -195,7 +214,7 @@
 
 # Pros
 
-+++?image=/assets/image/speed.jpg
++++?image=/assets/image/speed.png
 
 # Pros
 - Speed
@@ -403,71 +422,129 @@ $ MOZ_HEADLESS=1 python manage.py test
 
 +++
 
-# Where's the code?
-
-+++?code=/assets/code/blacklisting.java&title=Blacklisting w/ BMP
-
-+++
-
 # Missing Images
-
+![](/assets/image/nothere.jpg)
 +++
-
+# HTTP Library
+- Capture HAR log
+- Use library to make request to each source
+- Validate Response Code 200
+- Can also validate size/type
+---
 # Performance Testing
-
-#TODO Perf pages
-#TODO Anomaly Detection
++++
+# Sort Of
+- Validate Page Load Times are Under SLA
+- Find Slow Loading Resources
+- Bonus
+    - Send Metrics to Dashboard
+- Bonus
+    - Use Machine Learning to Find Anomalies
 
 ---
 
 # Load Testing
-#TODO Quick overview
++++
+# Sort Of
+- Convert HAR to JMX
+    - Flood.io/har2jmx
+- Taurus
+    - gettaurus.org
 ---
 
 # Security Testing
++++
+# Seriously?!?!
++++
+### Even Equifax could have done this
++++
+# How does this work?
++++
+# OWASP Zed Attack Proxy
+- Run Selenium Test while running recorder |
+- Replays using different attacking methods |
++++
+# Run it all the time
+## Its a Jenkins Plugin!
++++
+https://wiki.jenkins.io/display/JENKINS/zap+plugin
++++
+# Dude thats hard
 
-#TODO OWASP Zap
-#TODO OWasp Zap Docker
-#TODO OWASP ZAP JEnkins
++++
+# 'k
++++
+# Docker FTW
+<span class="fragment">https://github.com/zaproxy/zaproxy/wiki/Docker</span>
+
 
 ---
-
+<div id="forgotPassword"></div>
 # Forgot Password?
 
-#TODO Button with modal pops up fill in and sendemail then get that email and visit page to fix
-
++++?include=assets/code/mailosaur_sample.py&title=Mailosaur Example// TODO Button with modal pops up fill in and sendemail then get that email and visit page to fix
+@[1](Connect to your mailbox)
+@[3-4](Get all your emails)
+@[6-7](The first email should have this title)
 ---
 
 # Highlight Elements
-#TODO highlight script injection
 
----
+```javascript
+Highlighting
 
-# Notifications
+“arguments[0].setAttribute(arguments[1],
+arguments[2])”, element, “style”,
+“border: 2px solid red;”
 
-#TODO Run crapton of nodejs tests and get notifications on tests passing
+“arguments[0].setAttribute(arguments[1],
+arguments[2])”, element, “style”,
+original_style
+```
+
++++
+# Wait do you want to see it?
++++
+<div id="highlight"></div>
+
 
 ---
 
 # Mobile Device Emulation
 
-#TODO Short Video showing steps
+// TODO Short Video showing steps
+---
 # But thats manual
-#TODO Kick off selenium test to showcase
+---
+### Awesomeness ahead
+// TODO Kick off selenium test to showcase
 ---
 # Tapsterbot
-#TODO JAson Hugs
-#TODO youtube video
+// TODO Jason Hugs
+// TODO youtube video as Webm
 
----
+---?image=assets/image/mind_blown.png&opacity=100
 
 # Minds Blown
+---
+# Code: SUPERSECRET
+[SeleniumGuidebook.com](https://seleniumguidebook.com/)
 
+### Thru May xz
 ---
 
+# Do you want more of this?
+
++++
+
+# Preorder MY Book
+## seleniumaboveandbeyond.com
+### lazycoder.io/book
+
+---
 # Questions?
 
-#TODO Cat raising hands
+// TODO Cat raising hands
 
 ---
 
@@ -475,9 +552,9 @@ $ MOZ_HEADLESS=1 python manage.py test
 
 ---
 
-#TODO Selenium scripts takes over and makes repo public
-#TODO Selenium adds in banner to lazycoder.io for direct github link
-#TODO Selenium tweets it out as well
+// TODO Selenium scripts takes over and makes repo public
+// TODO Selenium adds in banner to lazycoder.io for direct github link
+// TODO Selenium tweets it out as well
 
 ---?image=/assets/image/hal.png
 
@@ -485,5 +562,5 @@ $ MOZ_HEADLESS=1 python manage.py test
 
 ---
 
-#TODO Pause Presentation and go back to Questions
+// TODO Pause Presentation and go back to Questions
 

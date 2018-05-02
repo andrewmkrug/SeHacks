@@ -7,8 +7,8 @@ from selenium.webdriver.support import expected_conditions as EC
 
 def wait(locator):
     wait = WebDriverWait(driver, 900)
-    element = wait.until(EC.element_to_be_clickable((By.ID, locator)))
-
+    element = wait.until(EC.element_to_be_clickable((By.CSS_SELECTOR, locator)))
+    return element
 
 def highlight(element):
     """Highlights (blinks) a Selenium Webdriver element"""
@@ -18,15 +18,16 @@ def highlight(element):
                               element, s)
     original_style = element.get_attribute('style')
     apply_style("background: yellow; border: 2px solid red;")
-    time.sleep(1)
+    time.sleep(3)
     apply_style(original_style)
 
-driver = webdriver.Firefox()
-driver.get("http://locahost:9000")
+driver = webdriver.Chrome()
+# driver.get("http://localhost:9000/gitpitch/desktop#/")
+driver.get("http://localhost:9000/gitpitch/desktop#/18")
+#wait("button.navigate-down").click()
+# wait("#forgotPassword")
 
-wait("forgotPassword")
+wait("#highlight")
 
-wait("highlight")
-
-highlight(driver.find_element_by_class_name("highlight(driver.find_element)"))
+highlight(driver.find_element_by_class_name(".slide-menu-button"))
 driver.close()

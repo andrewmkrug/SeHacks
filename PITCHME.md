@@ -482,7 +482,7 @@ https://wiki.jenkins.io/display/JENKINS/zap+plugin
 <div id="forgotPassword"></div>
 # Forgot Password?
 
-+++?include=assets/code/mailosaur_sample.py&title=Mailosaur Example// TODO Button with modal pops up fill in and sendemail then get that email and visit page to fix
++++?code=assets/code/mailosaur_sample.py&title=Mailosaur Example// TODO Button with modal pops up fill in and sendemail then get that email and visit page to fix
 @[1](Connect to your mailbox)
 @[3-4](Get all your emails)
 @[6-7](The first email should have this title)
@@ -504,7 +504,7 @@ original_style
 
 +++
 # Wait do you want to see it?
-+++
+
 <div id="highlight"></div>
 
 

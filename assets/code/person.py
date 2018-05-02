@@ -7,7 +7,7 @@ class Person():
         if self.knowledge not in slide:
             self.knowledge += slide
             self.learned_something_new = True
-        self.raise_hand()
+            self.raise_hand()
 
     def raise_hand(self):
         pass

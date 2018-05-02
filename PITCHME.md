@@ -5,7 +5,7 @@
 ## Andrew Krug Medina
 
 +++
-<!-- .slide: data-autoslide="2000" -->
+<!-- .slide: data-autoslide="1500" -->
 
 # Who I am
 
@@ -50,8 +50,14 @@
 # How do you fill out your toolbox?
 
 +++?code=/assets/code/expected_outcome.py&title=Expected Outcome
+@[5-8](Poorly Defined Test)
+@[8](Everyone needs to learn one thing)
 
 +++?code=/assets/code/person.py&title=How Will I Tell
+@[2-4](Minimal Def of a Person)
+@[7](If the slide has something you don't know)
+@[10](Then raise your hand)
+@[13](Not writing pseudo code for raising hand)
 
 +++?video=/assets/video/dont_be_scared.mp4
 # Don't be scared
@@ -87,10 +93,6 @@
 
 +++
 
-# Yes with Selenium
-
-+++
-
 # Talk about Meta
 
 +++
@@ -104,11 +106,11 @@
 +++
 
 # Or Watch it Later
-[LazyCoder.io](lazycoder.io}
+##[LazyCoder.io](lazycoder.io)
 
 ---
 
-# Related to Selenium
+# Content is Related to Selenium
 
 +++
 
@@ -176,8 +178,7 @@
 ---
 
 ## ...See what I did there?
-+++
-# Deal with it
+
 ---
 
 # Topics
@@ -187,8 +188,18 @@
 
 ---
 
-# Bonuses are sprinkled throughout
+# & Bonuses are sprinkled throughout
 
++++
+
+# Why
++++
+
+# Because Sprinkles are for winners
+
++++
+
+# Your are all Winners
 ---
 
 # Headless Testing
@@ -258,7 +269,7 @@
 
 
 ---
-# XFVB
+# XVFB
 ## X Virtual FrameBuffer
 
 +++
@@ -277,7 +288,15 @@
 xvfb-run ruby example.rb
 ```
 +++
+```console
+xvfb-run mvn test
+```
++++
+```console
+xvfb-run your-test-cmds
+```
 
++++
 ## Wait, Everybody doesn't use Linux?!?!
 
 +++
@@ -426,30 +445,31 @@ $ MOZ_HEADLESS=1 python manage.py test
 ![](/assets/image/nothere.jpg)
 +++
 # HTTP Library
-- Capture HAR log
-- Use library to make request to each source
-- Validate Response Code 200
-- Can also validate size/type
+- Capture HAR log |
+- Use library to make request to each source |
+- Validate Response Code 200 |
+- Can also validate size/type |
 ---
 # Performance Testing
 +++
 # Sort Of
-- Validate Page Load Times are Under SLA
-- Find Slow Loading Resources
-- Bonus
-    - Send Metrics to Dashboard
-- Bonus
-    - Use Machine Learning to Find Anomalies
+- Validate Page Load Times are Under SLA |
+- Find Slow Loading Resources |
+- Bonus |
+    - Send Metrics to Dashboard |
+- Bonus |
+    - Use Machine Learning to Find Anomalies |
+    - Yup I did that! |
 
 ---
 
 # Load Testing
 +++
 # Sort Of
-- Convert HAR to JMX
-    - Flood.io/har2jmx
-- Taurus
-    - gettaurus.org
+- Convert HAR to JMX |
+    - Flood.io/har2jmx |
+- Taurus |
+    - gettaurus.org |
 ---
 
 # Security Testing

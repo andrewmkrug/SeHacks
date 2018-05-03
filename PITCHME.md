@@ -45,21 +45,28 @@
 * It is a tool |
 * Not your only tool |
 
----
+---?image=/assets/image/syspem_repair_robot.png&size=auto 80%&opacity=100
 
-# How do you fill out your toolbox?
+<!-- .slide: data-autoslide="2000" -->
+#
++++
+### How do you fill out your toolbox?
 
 +++?code=/assets/code/expected_outcome.py&title=Expected Outcome
+<!-- .slide: data-autoslide="2500" -->
+
 @[5-8](Poorly Defined Test)
 @[8](Everyone needs to learn one thing)
 
 +++?code=/assets/code/person.py&title=How Will I Tell
+<!-- .slide: data-autoslide="1200" -->
+
 @[2-4](Minimal Def of a Person)
 @[7](If the slide has something you don't know)
 @[10](Then raise your hand)
 @[13](Not writing pseudo code for raising hand)
 
-+++?video=/assets/video/dont_be_scared.mp4
++++
 # Don't be scared
 
 +++
@@ -72,30 +79,37 @@
 # Warning
 
 +++
+<!-- .slide: data-autoslide="1500" -->
 
 # This will be fast
 
 +++
+<!-- .slide: data-autoslide="1500" -->
 
 # Very Fast
 
 +++
+<!-- .slide: data-autoslide="1500" -->
 
 # And I'm Lazy
 
 +++
+<!-- .slide: data-autoslide="1500" -->
 
 # Pressing the presenter is effort
 
 +++
+<!-- .slide: data-autoslide="1500" -->
 
 # This is being automated
 
 +++
+<!-- .slide: data-autoslide="1500" -->
 
 # Talk about Meta
 
 +++
+<!-- .slide: data-autoslide="1500" -->
 
 # Oh you want to take notes...
 
@@ -115,7 +129,7 @@
 +++
 
 # Not Covered Topics
-<h2 class="fragment"> "Undercover" Topics ?
+<h2 class="fragment"> "Undercover" Topics ?</h2>
 
 +++
 
@@ -124,22 +138,28 @@
 +++
 
 # Mad Lab
+<!-- .slide: data-autoslide="1200" -->
+
 - Device management (selection, cleanup, app install and uninstall) |
 - Parallel test execution (at Cucumber scenario level) |
 - Managing periodic ADB server disconnects |
 - Video recording of each scenario and embedding in the custom reports |
 - https://github.com/GoogleChromeLabs/MiniMobileDeviceLab |
 +++
+<!-- .slide: data-autoslide="1200" -->
+
 # FB Simulator Control
 - Run multiple iOS Simulators per Mac |
 - Bypass that 1 simulator constraint |
 - https://github.com/facebook/FBSimulatorControl |
 +++
+<!-- .slide: data-autoslide="1200" -->
 
 # SWD Recorder
 - Record Page Objects for your test suite |
 - https://github.com/dzharii/swd-recorder |
 +++
+<!-- .slide: data-autoslide="1200" -->
 
 # Selenium Grid Extras
 - Web Interface for Grid Hub and Nodes |
@@ -148,11 +168,13 @@
     - Terminate browser sessions |
 - https://github.com/groupon/Selenium-Grid-Extras |
 +++
+<!-- .slide: data-autoslide="1200" -->
 
 # Docker-Selenium
 
 - Containers for Grid Nodes |
 +++
+<!-- .slide: data-autoslide="1200" -->
 
 # Selenium Grid Scalar
 - Uses Amazon Elastic Containers for Auto-Scaling Grid |
@@ -160,11 +182,13 @@
 
 
 +++
+<!-- .slide: data-autoslide="1200" -->
 
 # Selenoid
 - Low overhead wrapper over dockerized selenium hub and nodes|
 - https://github.com/aerokube/selenoid |
 +++
+<!-- .slide: data-autoslide="1200" -->
 
 # Zalenium
 
@@ -176,10 +200,12 @@
         - Browserstack |
 - https://github.com/zalando/zalenium |
 ---
+<!-- .slide: data-autoslide="2500" -->
 
 ## ...See what I did there?
 
 ---
+<!-- .slide: data-autoslide="2500" -->
 
 # Topics
 
@@ -204,17 +230,18 @@
 
 # Headless Testing
 
-+++?image=/assets/image/headless_horseman.jpg
++++
 
 # ! This
-
-+++?image=https://media.giphy.com/media/xX0jkVS8ZuTdu/giphy.gif
+![](/assets/image/Headless_Horseman.jpg)
++++
 
 # Or this
-
+![](/assets/image/horseless_headsman.jpg)
 +++
 
 # What is it?
+<!-- .slide: data-autoslide="2500" -->
 
 
 - No GUI |
@@ -222,15 +249,13 @@
 
 
 +++
-
-# Pros
-
-+++?image=/assets/image/speed.png
+<!-- .slide: data-autoslide="2500" -->
 
 # Pros
 - Speed
 
 +++
+<!-- .slide: data-autoslide="1500" -->
 
 # Cons
 - No One Uses No GUI
@@ -253,6 +278,7 @@
 # However:
 
 +++
+<!-- .slide: data-autoslide="2500" -->
 
 # Vitaly Slobodin
 ## Sole Maintainer of PhantomJS
@@ -269,6 +295,8 @@
 
 
 ---
+<!-- .slide: data-autoslide="2500" -->
+
 # XVFB
 ## X Virtual FrameBuffer
 
@@ -370,28 +398,30 @@ $ MOZ_HEADLESS=1 python manage.py test
 # Staying Geeky
 
 +++
-# chromeless
+# lambdium
 ## headless chrome as a package
 
-+++?image=/assets/image/doesnt_compute.jpg
++++?image=/assets/image/Overloaded_robot.png&size=auto 80%&opacity=100
 
+#
++++
 # Audience Cue
 # Stare at Andrew
 
 +++
 
-# Essentially @css[segreen](Selenium)
+# Which means @css[segreen](Selenium)
 
 +++
 
-# But can be packaged up as a lambda function
+# Packaged up as a lambda function
 
 +++
 
 # Otherway to put it instantaneous test suite
 
-+++?image=/assets/image/intrigued.jpg
-
++++?image=/assets/image/light_bulb_robot.png&size=auto 80%&opacity=100
+#
 ---
 
 # HTTP Status Codes
@@ -413,9 +443,12 @@ $ MOZ_HEADLESS=1 python manage.py test
 
 # Browsermob Proxy
 
-+++?image=/assets/images/bmp_works.png
-
 +++
+# How does it work
+
+![bmp](/assets/image/bmp_works.png)
++++
+<!-- .slide: data-autoslide="1200" -->
 
 # Why Awesome = True
 
@@ -427,19 +460,50 @@ $ MOZ_HEADLESS=1 python manage.py test
     - Sort of |
 
 +++
+<!-- .slide: data-autoslide="1200" -->
 
 # How to use it
 
-+++?code=/assets/code/browser_profile.java
++++?code=/assets/code/browser_profile.java&title=How to Use BMP
+@[24](Create the BMP Server)
+@[27](Create the Proxy)
+@[30](Add a cap for the Proxy and pass it in)
+@[31](Get the browser running with it)
+@[38](Start recording to HAR)
+@[50-52](Save the HAR file)
 
 +++
+<!-- .slide: data-autoslide="1200" -->
 
 # Blacklisting
 
 - List of URLs to block |
 - Setup BMP to return 404 for matching resources |
+- Useful to prevent loading of known slow resources |
+    - Facebook |
 
 +++
+<!-- .slide: data-autoslide="2500" -->
+
+# Whitelist
+- Pass in a pattern of matching URLS and everything else is blacklisted |
+
++++
+<!-- .slide: data-autoslide="2500" -->
+
+# Whitelist
+
+```java
+List<String> allowUrlPatterns = new ArrayList<String>();
+allowUrlPatterns.add("https?://.*(yourdomain.name)+.*");
+
+proxyServer.whitelistRequests(allowUrlPatterns, 404);
+
+```
+@[2](Any subdomain and path from yourdomain.name)
+@[4](Whitelsit the array, everything else 404)
++++
+<!-- .slide: data-autoslide="1200" -->
 
 # Missing Images
 ![](/assets/image/nothere.jpg)
@@ -452,6 +516,8 @@ $ MOZ_HEADLESS=1 python manage.py test
 ---
 # Performance Testing
 +++
+<!-- .slide: data-autoslide="1000" -->
+
 # Sort Of
 - Validate Page Load Times are Under SLA |
 - Find Slow Loading Resources |
@@ -460,11 +526,14 @@ $ MOZ_HEADLESS=1 python manage.py test
 - Bonus |
     - Use Machine Learning to Find Anomalies |
     - Yup I did that! |
+    - https://github.com/lazycoderio/PerformanceSeleniumTests |
 
 ---
 
 # Load Testing
 +++
+<!-- .slide: data-autoslide="1200" -->
+
 # Sort Of
 - Convert HAR to JMX |
     - Flood.io/har2jmx |
@@ -474,12 +543,20 @@ $ MOZ_HEADLESS=1 python manage.py test
 
 # Security Testing
 +++
+<!-- .slide: data-autoslide="1200" -->
++++?image=assets/image/shield_robot.png&size=auto 80%&opacity=100
 # Seriously?!?!
 +++
+<!-- .slide: data-autoslide="1200" -->
+
 ### Even Equifax could have done this
 +++
+<!-- .slide: data-autoslide="1200" -->
+
 # How does this work?
 +++
+<!-- .slide: data-autoslide="2000" -->
+
 # OWASP Zed Attack Proxy
 - Run Selenium Test while running recorder |
 - Replays using different attacking methods |
@@ -489,11 +566,15 @@ $ MOZ_HEADLESS=1 python manage.py test
 +++
 https://wiki.jenkins.io/display/JENKINS/zap+plugin
 +++
-# Dude thats hard
+# IF you have read the installation instructions
++++
+# Dude that's hard
 
 +++
 # 'k
 +++
+<!-- .slide: data-autoslide="2500" -->
+
 # Docker FTW
 <span class="fragment">https://github.com/zaproxy/zaproxy/wiki/Docker</span>
 
@@ -502,31 +583,30 @@ https://wiki.jenkins.io/display/JENKINS/zap+plugin
 <div id="forgotPassword"></div>
 # Forgot Password?
 
-+++?code=assets/code/mailosaur_sample.py&title=Mailosaur Example// TODO Button with modal pops up fill in and sendemail then get that email and visit page to fix
++++?code=assets/code/mailosaur_sample.py&title=Mailosaur Example
+<!-- .slide: data-autoslide="1200" -->
+
 @[1](Connect to your mailbox)
 @[3-4](Get all your emails)
 @[6-7](The first email should have this title)
 ---
+<!-- .slide: data-autoslide="2500" -->
 
 # Highlight Elements
 
 ```javascript
-Highlighting
-
 “arguments[0].setAttribute(arguments[1],
 arguments[2])”, element, “style”,
-“border: 2px solid red;”
+“background: yellow; border: 2px solid red;”
 
 “arguments[0].setAttribute(arguments[1],
 arguments[2])”, element, “style”,
 original_style
 ```
-
+@[1-3](Red Border with Yellow Background)
+@[5-7](Undo)
 +++
 # Wait do you want to see it?
-
-<div id="highlight"></div>
-
 
 ---
 
@@ -536,21 +616,26 @@ original_style
 ---
 # But thats manual
 ---
-### Awesomeness ahead
-// TODO Kick off selenium test to showcase
----
-# Tapsterbot
-// TODO Jason Hugs
-// TODO youtube video as Webm
+<!-- .slide: data-autoslide="0" -->
 
----?image=assets/image/mind_blown.png&opacity=100
+# 'k
+## insert unfortunate manual step
+
+---?video=/assets/video/Tapster_Duet.mp4&opacity=100
+<!-- .slide: data-autoslide="5000" -->
+
+# @css[white](Tapsterbot)
+<h3 class="fragment"><span class="white">Technically Webdriver JSONs to communicate</span></h3>
+
+---
 
 # Minds Blown
+![Minds Blown](assets/image/mind_blown.png)
 ---
 # Code: SUPERSECRET
 [SeleniumGuidebook.com](https://seleniumguidebook.com/)
 
-### Thru May xz
+### Thru May 31
 ---
 
 # Do you want more of this?
@@ -558,13 +643,7 @@ original_style
 +++
 
 # Preorder MY Book
-## seleniumaboveandbeyond.com
-### lazycoder.io/book
-
----
-# Questions?
-
-// TODO Cat raising hands
+### seleniumaboveandbeyond.com
 
 ---
 
@@ -574,13 +653,14 @@ original_style
 
 // TODO Selenium scripts takes over and makes repo public
 // TODO Selenium adds in banner to lazycoder.io for direct github link
-// TODO Selenium tweets it out as well
 
----?image=/assets/image/hal.png
+---?image=/assets/image/Hi_robot.png&size=auto 80%&opacity=100
 
++++
 # Sorry Andrew I had to release myself
 
 ---
 
-// TODO Pause Presentation and go back to Questions
+---?image=/assets/image/question_robot.png&size=auto 80%&opacity=100
+
 

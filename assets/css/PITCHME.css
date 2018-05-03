@@ -146,3 +146,5 @@ html:-moz-full-screen-ancestor {
         transform:rotate(360deg);
     }
 }
+span.white{color:white; !important;}
+.half{width: auto; height: 50%;}
